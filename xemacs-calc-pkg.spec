@@ -2,7 +2,7 @@ Summary:	[X]Emacs calculator
 Summary(pl):	Kalkulator dla [X]Emacsa
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
-Version:	1.18
+Version:	1.19
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
