@@ -2,12 +2,12 @@ Summary:	[X]Emacs calculator
 Summary(pl):	Kalkulator dla [X]Emacsa
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
-Version:	1.23
+Version:	1.24
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	e66651dacc67325f6e6d033f80f2e989
+# Source0-md5:	61fa56abe04492e448a8549b5978ca3a
 #Patch0:	xemacs-calc-pkg-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
