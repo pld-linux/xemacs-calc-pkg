@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Scientific, financial, and symbolic calculator for [X]Emacs.
 
-%description -l pl 
+%description -l pl
 Naukowy, finansowy i symboliczny kalkulator dla [X]Emacsa.
 
 %prep
@@ -29,7 +29,7 @@ install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/calc/ChangeLog 
+gzip -9nf lisp/calc/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -37,6 +37,6 @@ rm -fr $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
-%doc lisp/calc/ChangeLog.gz 
+%doc lisp/calc/ChangeLog.gz
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
