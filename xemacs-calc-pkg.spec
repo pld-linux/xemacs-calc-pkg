@@ -12,8 +12,13 @@ Name:    	xemacs-calc-pkg
 Version: 	1.12
 Release:	1
 
+# temporary disabled info files: some of them don't rebuild after patch
+%define		NoInfo True
+#Patch0: 	xemacs-calc-pkg-info.patch
+
+
 ### Preamble
-Copyright:	GPL
+License:	GPL
 Group:    	Applications/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 URL:      	http://www.xemacs.org
@@ -22,7 +27,6 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
 Requires: 	xemacs
-Prereq:  	/usr/sbin/fix-info-dir
 ### EndPreamble
 
 %description
@@ -39,10 +43,6 @@ Prereq:  	/usr/sbin/fix-info-dir
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
-install -d $RPM_BUILD_ROOT%{_infodir}
-mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
-rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info*
 gzip -9nf lisp/calc/ChangeLog 
 
 %clean
@@ -50,17 +50,12 @@ rm -fr $RPM_BUILD_ROOT
 ### EndMain
 
 ### PrePost
-%post
-/usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
-
-%postun
-/usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 ### EndPrePost
 
 ### Files
 %files
 %defattr(644,root,root,755)
-%{_infodir}/*
+%{_datadir}/xemacs-packages/etc/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
 %doc lisp/calc/ChangeLog.gz 
