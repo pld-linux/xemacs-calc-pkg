@@ -3,9 +3,10 @@ Summary(pl):	Kalkulator dla [X]Emacsa
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
 Version:	1.17
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 #Patch0:	xemacs-calc-pkg-info.patch
