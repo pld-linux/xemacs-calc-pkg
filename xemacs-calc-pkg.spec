@@ -2,7 +2,7 @@ Summary:	Emacs calculator
 Summary(pl):	Emacs calculator
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
-Version:	1.15
+Version:	1.16
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
