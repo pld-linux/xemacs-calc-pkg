@@ -1,5 +1,5 @@
-Summary:	Emacs calculator
-Summary(pl):	Emacs calculator
+Summary:	[X]Emacs calculator
+Summary(pl):	Kalkulator dla [X]Emacsa
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
 Version:	1.17
@@ -16,8 +16,10 @@ Requires:	xemacs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Scientific, financial, and symbolic calculator for [X]Emacs.
 
 %description -l pl 
+Naukowy, finansowy i symboliczny kalkulator dla [X]Emacsa.
 
 %prep
 %setup -q -c
