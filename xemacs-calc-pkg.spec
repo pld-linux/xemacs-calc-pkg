@@ -2,7 +2,7 @@ Summary:	[X]Emacs calculator
 Summary(pl):	Kalkulator dla [X]Emacsa
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
-Version:	1.19
+Version:	1.23
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -29,8 +29,6 @@ install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/calc/ChangeLog
-
 # remove .el file if corresponding .elc file exists
 find $RPM_BUILD_ROOT -type f -name "*.el" | while read i; do test ! -f ${i}c || rm -f $i; done
 
@@ -39,7 +37,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc lisp/calc/ChangeLog
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
-%doc lisp/calc/ChangeLog.gz
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
