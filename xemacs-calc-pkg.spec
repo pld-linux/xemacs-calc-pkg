@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+# Source0-md5:	e66651dacc67325f6e6d033f80f2e989
 #Patch0:	xemacs-calc-pkg-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
