@@ -1,5 +1,5 @@
 Summary:	[X]Emacs calculator
-Summary(pl):	Kalkulator dla [X]Emacsa
+Summary(pl.UTF-8):   Kalkulator dla [X]Emacsa
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
 Version:	1.26
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Scientific, financial, and symbolic calculator for [X]Emacs.
 
-%description -l pl
+%description -l pl.UTF-8
 Naukowy, finansowy i symboliczny kalkulator dla [X]Emacsa.
 
 %prep
