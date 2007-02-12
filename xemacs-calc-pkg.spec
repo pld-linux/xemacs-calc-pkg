@@ -1,5 +1,5 @@
 Summary:	[X]Emacs calculator
-Summary(pl.UTF-8):   Kalkulator dla [X]Emacsa
+Summary(pl.UTF-8):	Kalkulator dla [X]Emacsa
 Name:		xemacs-calc-pkg
 %define 	srcname	calc
 Version:	1.26
