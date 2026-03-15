@@ -6,10 +6,10 @@ Version:	1.26
 Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+Source0:	http://ftp.xemacs.org/pub/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	2ebbdf5c8cba89d50ab6300287697a6b
 #Patch0:	xemacs-calc-pkg-info.patch
-URL:		http://www.xemacs.org/
+URL:		https://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
 Requires:	xemacs
